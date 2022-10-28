@@ -1,0 +1,76 @@
+.auth {
+  width: 95%;
+  max-width: 400px;
+  margin: 24px auto;
+  border-radius: 10px;
+  /* border: 3px solid #1d1d1d; */
+  background-color: #fff;
+  /* box-shadow: 2px 4px 120px rgba(0, 0, 0, 0.08); */
+  padding: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.control {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.control label {
+  position: absolute;
+  left: 40px;
+  top: -10px;
+  transition: all 0.2s;
+  padding: 0 2px;
+  z-index: 1;
+  color: #1d1d1b;
+  font-weight: 500;
+}
+
+.control input {
+  padding: 10px;
+  font-size: 16px;
+  width: 85%;
+  height: 100%;
+  border: 3px solid #1d1d1b;
+  background-color: #ffffff;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.control label::before {
+  content: "";
+  height: 5px;
+  background: #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  width: 100%;
+  z-index: -1;
+}
+
+.actions {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions button {
+  cursor: pointer;
+  font: inherit;
+  color: #1d1d1b;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 6px 24px;
+}
+
+.actions .toggle {
+  margin-top: 16px;
+}
+
+.actions .primaryButton {
+  font-weight: 500;
+  border: 3px solid #1d1d1b;
+}
